@@ -1,0 +1,13 @@
+# Hacer que siempre muestre tu nombre de usuario
+[username]
+show_always = true
+format = "[$user]($style)@"
+
+# Hacer que siempre muestre el nombre de tu computadora
+[hostname]
+ssh_only = false
+format = "[$hostname]($style) "
+
+# (Opcional) Evitar que acorte las rutas largas
+[directory]
+truncation_length = 0
