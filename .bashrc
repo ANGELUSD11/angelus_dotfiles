@@ -75,6 +75,11 @@ xterm*|rxvt*)
     ;;
 esac
 
+# Prompt estilo Warp (solo en kitty): user@host ~ en verde + flecha ❯
+if [ "$TERM" = "xterm-kitty" ]; then
+    PS1='\[\e]0;\u@\h: \w\a\]\n\[\e[1;32m\]\u@\h\[\e[0m\] \[\e[1;33m\]\w\[\e[0m\]\n\[\e[1;32m\]❯\[\e[0m\] '
+fi
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
