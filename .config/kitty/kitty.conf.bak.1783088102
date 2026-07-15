@@ -103,11 +103,6 @@ map ctrl+shift+d launch --location=hsplit --cwd=current
 # --- Cerrar panel seleccionado ---
 map ctrl+shift+w close_window
 
-# --- Borrar sesion en Antigravity CLI (panel /resume) ---
-# El atajo real de Antigravity es Ctrl+Delete. Forzamos a kitty a emitir
-# la secuencia estandar de Ctrl+Delete para que llegue a la app.
-map ctrl+delete send_text all \x1b[3;5~
-
 # --- Maximizar / minimizar panel seleccionado (toggle) ---
 # unmap explícito necesario porque ctrl+shift+u es el atajo por defecto de unicode_input
 unmap ctrl+shift+i

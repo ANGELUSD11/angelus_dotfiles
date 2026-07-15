@@ -11,3 +11,7 @@ source ~/.local/share/omarchy/default/bash/rc
 # alias p='python'
 
 . "$HOME/.local/share/../bin/env"
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/angelus/.local/bin:$PATH"

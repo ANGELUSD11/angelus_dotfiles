@@ -3,3 +3,6 @@ style = "bold cyan"
 truncation_length = 0
 truncate_to_repo = false
 home_symbol = "/home/angelus"
+
+[python]
+disabled = false
